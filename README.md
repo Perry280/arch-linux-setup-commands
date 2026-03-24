@@ -40,6 +40,10 @@ Close the container
 ```
 cryptsetup close to_be_wiped
 ```
+Without `cryptsetup`:
+```
+dd if=/dev/zero of=/dev/sdX bs=4096 status=progress
+```
 
 ### Wipe NVMe SSD
 Which commands are supported
